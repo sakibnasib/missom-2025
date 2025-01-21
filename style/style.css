@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  *{
+    margin: 0%;
+    padding: 0%;
+}
+  /* shard style */
+  .display-flex{
+    display: flex;
+  }
+  #tex-color{
+    color:rgb(255, 173, 90) ;
+  }
+  .text-gray{
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: rgb(62, 62, 62);
+  }
+  .btn-1{
+    width: 150px;
+    height: 40px;
+    font-weight: 500;
+    color: white;
+    border: none;
+    background-color:rgb(255, 89, 89) ;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .amet{
+    color: rgb(66, 66, 66);
+  }
+  /* banner-style */
+  .bg{
+    max-width: 1280px;
+    margin: 0% auto;
+  }
+  .banner{
+    justify-content: space-around;
+    align-items: center;
+  }
+  .banner-title-box{
+    max-width: 450px;
+    text-align: center;
+  }
+  .banner-title{
+    font-weight: 700;
+    font-weight: 3.6rem;
+    color: rgb(51, 51, 51);
+    margin: 10px;
+  }
+  /* mission */
+  .mission-container{
+   justify-content: space-between;
+  margin-top: 30px;
+  }
+  .my-mission{
+    max-width: 1100px;
+    margin: 0% auto;
+    text-align: center;
+  }
+ .text-bold{
+    font-weight: 600;
+    font-size: 1.50rem;
+    color: rgb(0, 0, 0);
+ }
+ .mission-logo{
+    margin-top: 20px;
+    width: 110px;
+ }
+ .box-1{
+    max-width: 310px;
+    height: 325px;
+    border-radius: 26px;
+background: rgba(79, 157, 166, 0.1);
+text-align: left;
+padding-left: 15px;
+ }
+ .box-2{
+    max-width: 310px; 
+    height: 325px;
+    border-radius: 26px;
+    background: rgba(255, 89, 89, 0.1);
+    text-align: left;
+padding-left: 15px;
+ }
+ .box-3{
+    max-width: 310px; 
+    height: 325px;
+    border-radius: 26px;
+    background: rgb(255, 244, 214);
+    text-align: left;
+padding-left: 15px;
+ }
+  /* respon */
+  @media screen and (max-width:576px) {
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .mission-container{
+        flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       gap: 15px;
+    }
+    
+    
+  }
