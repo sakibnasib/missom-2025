@@ -9,13 +9,18 @@
   *{
     margin: 0%;
     padding: 0%;
+    box-sizing: border-box;
 }
   /* shard style */
+  
   .display-flex{
     display: flex;
   }
   #tex-color{
     color:rgb(255, 173, 90) ;
+  }
+  #color-2{
+    color:rgb(255, 89, 89) ;
   }
   .text-gray{
     font-weight: 400;
@@ -32,6 +37,15 @@
     border-radius: 5px;
     text-align: center;
     margin-top: 10px;
+  }
+  .btn-2{
+    width: 210px;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+    background-color: rgb(255, 89, 89);
+    color: white;
+    margin-top: 15px;
   }
   .amet{
     color: rgb(66, 66, 66);
@@ -53,7 +67,8 @@
     font-weight: 700;
     font-weight: 3.6rem;
     color: rgb(51, 51, 51);
-    margin: 10px;
+    margin: 10px; border-left: 2px solid rgb(255, 173, 90);
+    text-align: left;
   }
   /* mission */
   .mission-container{
@@ -98,17 +113,110 @@ padding-left: 15px;
     text-align: left;
 padding-left: 15px;
  }
-  /* respon */
+ /* develop-section */
+ .develop-section{
+  margin-top: 30px;
+  max-width: 1280px;
+  text-align: center;
+}
+ .img-coding{
+  max-width:350px ;
+  height: 350px ;
+ }
+ .team2{
+  width: 100%;
+ }
+ .limits-title{
+  /* margin-top: 20px; */
+  max-width: 580px;
+  text-align: left;
+ }
+ .container-1{
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+ }
+
+ .container-2{
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+ }
+ .container-3{
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+}
+/* application-container */
+.application-container{
+  max-width: 1280px;
+  margin-top: 40px;
+  text-align: center;
+}
+.app-section{
+  max-width: 990px;
+  margin-top: 20px;
+  margin: 0 auto;
+}
+.app-box{
+  justify-content: space-around;
+  margin-top: 40px;
+}
+.app-deatils{
+  max-width: 460px;
+  text-align: left;
+}
+.app-img{
+  max-width:310px;
+}
+.app-img{
+  width: 100%;
+}
+/* footer container */
+.footer-section{
+  margin-top: 30px;
+  max-width: 1280px;
+  height: 157px;
+ background-color:  rgb(11, 13, 23);;
+ text-align: center;
+}
+.footer-title{
+  font-size: 2.25rem;
+  color: rgb(255, 255, 255);
+  padding-top: 50px;
+}
+.fotter-desc{
+  font-size: 0.8rem;
+  color: rgb(217, 219, 225);
+  padding-top: 20px;
+}
+.about{
+  max-width: 320px;
+  text-align: center;
+  margin: 0% auto;
+}
+  /* respon */ 
   @media screen and (max-width:576px) {
-    .banner{
+    .banner, .container-3{
         flex-direction: column-reverse;
     }
+    /* mission */
     .mission-container{
         flex-direction: column;
        justify-content: center;
        align-items: center;
        gap: 15px;
     }
+    /* develop */
+    .container-1, 
+    .app-box, .container-2{
+      flex-direction: column;
+    }
+    .limits-title, 
+    .app-deatils, .app-img{
+      text-align: center;
+    }
+     
     
     
   }
